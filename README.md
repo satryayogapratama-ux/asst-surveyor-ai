@@ -175,17 +175,25 @@ print(f"UTM: {utm}")
 
 ---
 
-## Comparison vs Enterprise Software
+## Positioning
 
-| Feature | Asst Surveyor AI | Surpac | Vulcan | Micromine |
-|---------|-----------------|--------|--------|-----------|
-| **Price** | Free (MIT) | $15K–$40K/yr | $15K–$40K/yr | $15K–$40K/yr |
-| **ML Grade Estimation** | Random Forest, XGBoost, NN | Kriging only | Kriging/IDW | Kriging/IDW |
-| **Built-in Anomaly Detection** | IsolationForest + LOF | Not included | Not included | Not included |
-| **Auto Model Selection** | Best model auto-selected | Manual | Manual | Manual |
-| **Automated Report** | One-click HTML | Manual | Manual | Manual |
-| **Natural Language Interface** | Offline-capable | None | None | None |
-| **Open Source** | MIT License | Proprietary | Proprietary | Proprietary |
+Surpac and Vulcan are industry-standard tools with decades of engineering behind them. Their 3D visualization, block model generation, and mine planning capabilities are well-established and not replicated here.
+
+**Asst Surveyor AI is not a replacement.** It is an open-source ML layer that addresses specific gaps enterprise software does not cover well:
+
+| Capability | Asst Surveyor AI | Surpac / Vulcan |
+|-----------|-----------------|-----------------|
+| **ML Grade Estimation** | Random Forest, XGBoost, Neural Network | Kriging / IDW only |
+| **Auto Model Selection** | Selects best model per dataset | Manual, single method |
+| **Built-in Anomaly Detection** | IsolationForest + LOF, flagged automatically | Not included |
+| **Automated Report** | One-click HTML output | Manual compilation |
+| **Natural Language Interface** | Offline-capable field assistant | None |
+| **3D Visualization** | Not included | Full support |
+| **Block Model Generation** | Not included | Full support |
+| **Mine Planning / Pit Optimization** | Not included | Full support |
+| **Price** | Free (MIT) | $15K–$40K/user/year |
+
+**Target users:** Small and medium mining companies that cannot justify enterprise license costs, assistant surveyors who need guided workflows, and exploration teams running rapid feasibility assessments alongside their existing toolchain.
 
 ---
 
