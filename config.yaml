@@ -1,0 +1,71 @@
+# Asst Surveyor AI - Configuration
+# Project-wide settings and model hyperparameters
+
+project:
+  name: "Asst Surveyor AI"
+  version: "1.0.0"
+  description: "AI-powered mining survey assistant with ML grade estimation"
+
+# Grade Estimator Configuration
+grade_estimator:
+  kriging:
+    variogram_model: "linear"
+    nlags: 6
+  random_forest:
+    n_estimators: 100
+    max_depth: 15
+    min_samples_split: 5
+    random_state: 42
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    random_state: 42
+  neural_network:
+    hidden_layers: [64, 32]
+    activation: "relu"
+    max_iter: 500
+    random_state: 42
+
+# Volume Calculator Configuration
+volume_calculator:
+  rbf_function: "thin_plate"
+  smooth: 1e-7
+  epsilon: 1.0
+
+# Anomaly Detector Configuration
+anomaly_detector:
+  isolation_forest:
+    contamination: 0.05
+    random_state: 42
+  local_outlier_factor:
+    n_neighbors: 20
+    contamination: 0.05
+
+# Coordinate Transformer Configuration
+coordinate_transformer:
+  utm_zones:
+    default: 48  # Central Indonesia
+    min: 46
+    max: 54
+  datum: "WGS84"
+
+# Drill Hole Analyzer Configuration
+drill_hole_analyzer:
+  composite_length: 2.0  # meters
+  clustering:
+    kmeans_clusters: 3
+    random_state: 42
+  lithology_classes: ["granite", "diorite", "breccia", "intrusive"]
+
+# Report Generator Configuration
+report_generator:
+  format: "html"
+  include_plots: true
+  template: "professional"
+
+# Cross-Validation Configuration
+cross_validation:
+  cv_folds: 5
+  random_state: 42
+  test_size: 0.2
