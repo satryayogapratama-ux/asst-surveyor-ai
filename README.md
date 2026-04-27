@@ -1,12 +1,15 @@
 # Asst Surveyor AI
 
+> **Status: Open for Funding** — Spec complete, architecture designed, ML pipeline built. Ready to deploy when funded. [Contact →](mailto:satryayogapratama@gmail.com)
+
+![Status](https://img.shields.io/badge/Status-Open%20for%20Funding-blue.svg)
+
 **AI-powered mining survey assistant — ML grade estimation that outperforms traditional Kriging**
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3+-orange.svg)](https://scikit-learn.org)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0+-red.svg)](https://xgboost.ai)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-[![Status](https://img.shields.io/badge/Status-Production%20Ready-brightgreen.svg)]()
 
 ---
 
