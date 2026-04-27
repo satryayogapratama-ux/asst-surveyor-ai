@@ -2,6 +2,8 @@
 
 > **Status: Open for Funding** — Spec complete, architecture designed, ML pipeline built. Ready to deploy when funded. [Contact →](mailto:satryayogapratama@gmail.com)
 
+> ⚖️ **License: Source Available** — Free for personal/non-commercial use. Commercial use requires a written license. [Contact →](mailto:satryayogapratama@gmail.com)
+
 ![Status](https://img.shields.io/badge/Status-Open%20for%20Funding-blue.svg)
 
 **AI-powered mining survey assistant — ML grade estimation that outperforms traditional Kriging**
